@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import Box from "./Box";
 import NewBoxForm from "./NewBoxForm";
 import "./BoxList.css";
+import uuid from "uuid";
 
 class BoxList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            boxes: [{ height: 100, width: 100, backgroundColor: "red" }]
+            boxes: []
         };
         this.addBox = this.addBox.bind(this);
     }
@@ -28,6 +29,7 @@ class BoxList extends Component {
                             height={box.height}
                             width={box.width}
                             color={box.backgroundColor}
+                            key={uuid()}
                         />
                     ))}
                 </div>
