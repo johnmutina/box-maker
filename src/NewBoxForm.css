@@ -1,0 +1,21 @@
+.NewBoxForm-container {
+    padding: 1%;
+}
+
+.NewBoxForm-container label {
+    display: block;
+}
+
+.NewBoxForm-btn {
+    color: brown;
+    font-size: 15px;
+    background-color: rgb(255, 213, 158);
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.NewBoxForm-btn:hover {
+    cursor: pointer;
+}
